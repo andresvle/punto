@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CloudUpload, Eye, ArrowRight } from 'lucide-react';
 import './Upload.css';
-import blankFilmina from '../assets/blank-filmina.png';
+import blankFilmina from '../assets/blank-filmina.jpg';
 
 const Upload = () => {
   const [file, setFile] = useState<File | null>(null);

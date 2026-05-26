@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, CreditCard } from 'lucide-react';
 import './OrderFlow.css';
-import blankFilmina from '../assets/blank-filmina.png';
+import blankFilmina from '../assets/blank-filmina.jpg';
 
 const Checkout = () => {
   const navigate = useNavigate();
