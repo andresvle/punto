@@ -97,6 +97,123 @@
   font-weight: 600;
 }
 
+/* Nuevas Clases para Proyector, Música y Respirar */
+.light-purple-bg {
+  background-color: #F7F0FC;
+  color: var(--text-main);
+}
+
+.outline-purple-thick {
+  border: 3px solid var(--primary);
+  background-color: var(--white);
+}
+
+.font-bold-purple {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Spotify Player integration style */
+.spotify-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  border-top: 1px solid #EBEBEB;
+  padding-top: 32px;
+  margin-top: 32px;
+}
+
+.spotify-image-col {
+  flex-shrink: 0;
+  max-width: 240px;
+  display: flex;
+  justify-content: center;
+}
+
+.spotify-playlist-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease;
+}
+
+.spotify-playlist-img:hover {
+  transform: scale(1.02);
+}
+
+.spotify-text-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.spotify-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.spotify-btn-link {
+  text-decoration: none;
+}
+
+.spotify-btn-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1DB954;
+  color: var(--white);
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(29, 185, 84, 0.2);
+}
+
+.spotify-btn-content:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(29, 185, 84, 0.3);
+}
+
+.breathe-tips-spotify-block {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px dashed #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.spotify-inline-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #1DB954;
+  color: #1DB954;
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.spotify-inline-btn:hover {
+  background-color: #1DB954;
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(29, 185, 84, 0.15);
+}
+
 @media (max-width: 768px) {
   .content-page {
     padding: 24px 16px;
@@ -135,5 +252,40 @@
     margin-top: 24px;
     padding: 0 8px;
   }
+  
+  /* Mobile Overrides for new content blocks */
+  .spotify-container {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 24px;
+    margin-top: 24px;
+    align-items: center;
+  }
+  .spotify-image-col {
+    max-width: 100%;
+  }
+  .spotify-playlist-img {
+    max-width: 200px;
+  }
+  .spotify-text-col {
+    align-items: center;
+    text-align: center;
+  }
+  .spotify-btn-link, .spotify-btn-content {
+    width: 100%;
+    justify-content: center;
+  }
+  .breathe-tips-spotify-block {
+    align-items: center;
+    text-align: center;
+  }
+  .spotify-inline-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .font-bold-purple {
+    font-size: 1.05rem;
+  }
 }
+
 

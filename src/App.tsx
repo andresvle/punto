@@ -10,6 +10,9 @@ import EmotionalManagement from './pages/EmotionalManagement';
 import Checkout from './pages/Checkout';
 import Payment from './pages/Payment';
 import Confirmation from './pages/Confirmation';
+import FilmProjector from './pages/FilmProjector';
+import MusicImportance from './pages/MusicImportance';
+import BreatheRelax from './pages/BreatheRelax';
 import { useAuth } from './context/AuthContext';
 
 import React from 'react';
@@ -37,6 +40,9 @@ function App() {
           <Route path="personalizacion" element={<Upload />} />
           <Route path="gestion-pensamientos" element={<ThoughtManagement />} />
           <Route path="gestion-emocional" element={<EmotionalManagement />} />
+          <Route path="proyector" element={<FilmProjector />} />
+          <Route path="musica" element={<MusicImportance />} />
+          <Route path="respirar" element={<BreatheRelax />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="pago" element={<Payment />} />
           <Route path="confirmacion" element={<Confirmation />} />

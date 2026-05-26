@@ -49,13 +49,13 @@ const Dashboard = () => {
 
         <h3 className="section-subtitle-centered">Conoce más sobre:</h3>
         <div className="cards-flex-container">
-          <div className="card-flex-item">
+          <Link to="/proyector" className="card-flex-item link-card">
             <div className="icon-wrapper gold">
               <MustacheIcon />
             </div>
             <h4>Proyector de filminas</h4>
             <p>Conoce la alternativa que proponemos a la hora de dormir</p>
-          </div>
+          </Link>
           <Link to="/gestion-emocional" className="card-flex-item link-card">
             <div className="icon-wrapper gold">
               <Heart size={20} />
@@ -70,20 +70,20 @@ const Dashboard = () => {
             <h4>Gestión de pensamientos</h4>
             <p>Conoce la importancia de soltar pensamiento antes de dormir</p>
           </Link>
-          <div className="card-flex-item">
+          <Link to="/musica" className="card-flex-item link-card">
             <div className="icon-wrapper gold">
               <Music size={20} />
             </div>
             <h4>La importancia de la música</h4>
             <p>Conoce las recomendaciones musicales de Punto</p>
-          </div>
-          <div className="card-flex-item">
+          </Link>
+          <Link to="/respirar" className="card-flex-item link-card">
             <div className="icon-wrapper gold">
               <Wind size={20} />
             </div>
             <h4>Date un descanso</h4>
             <p>Conoce la importancia de saber respirar en momentos de tensión</p>
-          </div>
+          </Link>
         </div>
       </section>
 
