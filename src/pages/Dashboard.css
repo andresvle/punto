@@ -1,0 +1,249 @@
+.dashboard {
+  width: 100%;
+}
+
+.hero-section {
+  background-color: var(--primary);
+  background-image: url('../assets/hero.png');
+  background-repeat: repeat;
+  background-size: auto;
+  background-blend-mode: multiply;
+  color: var(--white);
+  padding: 80px 0;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-subtitle-centered {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.what-is-section {
+  padding: 80px 20px;
+}
+
+.what-is-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.what-is-text {
+  flex: 1.2;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.what-is-image {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-product-main {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease;
+}
+
+.img-product-main:hover {
+  transform: scale(1.02);
+}
+
+.cards-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-flex-item {
+  flex: 1 1 calc(33.333% - 24px);
+  min-width: 280px;
+  max-width: 360px;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-flex-item.link-card {
+  cursor: pointer;
+}
+
+.card-flex-item.link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.icon-wrapper.gold {
+  background-color: var(--bg-yellow);
+  color: var(--primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-flex-item h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-flex-item p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.community-section {
+  padding: 80px 20px;
+}
+
+.cards-grid.two-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+}
+
+.yellow-card {
+  background-color: var(--bg-yellow);
+}
+
+.purple-card {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.purple-card p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.small-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+.contact-section {
+  background-color: #F8F8F8;
+  padding: 60px 0;
+  font-size: 0.9rem;
+}
+
+.contact-section p {
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.mt-4 { margin-top: 32px; }
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 48px 16px;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+    line-height: 1.25;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  .what-is-section {
+    padding: 40px 16px;
+  }
+  .what-is-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .what-is-text {
+    font-size: 0.95rem;
+    text-align: left; /* Left alignment is much cleaner on mobile */
+  }
+  .img-product-main {
+    max-width: 100%;
+  }
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+  }
+  .section-subtitle-centered {
+    font-size: 1.25rem;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  .cards-flex-container {
+    gap: 16px;
+  }
+  .card-flex-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+  .community-section {
+    padding: 40px 16px;
+  }
+  .cards-grid.two-cols {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .contact-section {
+    padding: 40px 16px;
+  }
+  .mt-4 {
+    margin-top: 20px;
+  }
+}
+

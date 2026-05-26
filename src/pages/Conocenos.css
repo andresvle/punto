@@ -1,0 +1,275 @@
+.conocenos-page {
+  width: 100%;
+}
+
+/* Sección 2: ¿De donde nace punto? (Fondo Amarillo) */
+.origin-section-page {
+  background-color: var(--bg-yellow);
+  padding: 80px 0;
+}
+
+.section-title-page {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-main);
+  text-align: left;
+}
+
+.section-text-page {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-main);
+  text-align: justify;
+}
+
+/* Sección 3: ¿Cuál es su propósito? (Fondo Púrpura) */
+.purpose-section-page {
+  background-color: var(--primary);
+  padding: 80px 0;
+  color: var(--white);
+}
+
+.purpose-grid {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.purpose-text-col {
+  flex: 1.2;
+}
+
+.purpose-image-col {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-nightstand {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.img-nightstand:hover {
+  transform: scale(1.02);
+}
+
+.white-text {
+  color: var(--white) !important;
+}
+
+.mb-4 {
+  margin-bottom: 24px !important;
+}
+
+/* Sección 4: Creadores de Punto */
+.creators-section {
+  background-color: var(--bg-yellow);
+  padding: 80px 20px;
+}
+
+.centered-title {
+  text-align: center !important;
+  margin-bottom: 48px;
+}
+
+.creators-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.creator-card {
+  width: 100%;
+  max-width: 360px;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 32px 24px 24px;
+  position: relative;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.creator-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.upb-badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: #D81B60;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+}
+
+.creator-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.img-creator {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 36px;
+  box-shadow: var(--shadow-sm);
+}
+
+.creator-info h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.creator-age {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.creator-role {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.creator-subtext {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.creator-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.creator-social:hover {
+  opacity: 0.8;
+}
+
+.instagram-icon {
+  color: #E1306C;
+}
+
+/* Sección 5: Contacto */
+.contact-section-page {
+  background-color: #F8F6FC;
+  padding: 80px 20px;
+}
+
+.contact-title-page {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 24px;
+  color: var(--text-main);
+}
+
+.contact-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-subtitle-bold {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.contact-detail-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .origin-section-page {
+    padding: 40px 16px;
+  }
+  .section-title-page {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+  .section-text-page {
+    font-size: 0.95rem;
+    text-align: left; /* Left alignment is much cleaner on mobile */
+  }
+  .purpose-section-page {
+    padding: 40px 16px;
+  }
+  .purpose-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .img-nightstand {
+    max-width: 100%;
+  }
+  .creators-section {
+    padding: 40px 16px;
+  }
+  .centered-title {
+    margin-bottom: 24px;
+  }
+  .creators-grid {
+    gap: 20px;
+  }
+  .creator-card {
+    max-width: 100%;
+    padding: 24px 16px 16px;
+  }
+  .upb-badge {
+    top: 16px;
+    left: 16px;
+    font-size: 1rem;
+  }
+  .img-creator {
+    width: 140px;
+    height: 140px;
+    border-radius: 28px;
+  }
+  .creator-image-wrapper {
+    margin-bottom: 16px;
+  }
+  .creator-info h3 {
+    font-size: 1.15rem;
+  }
+  .creator-social {
+    font-size: 0.85rem;
+  }
+  .contact-section-page {
+    padding: 40px 16px;
+  }
+  .contact-title-page {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+}
+
