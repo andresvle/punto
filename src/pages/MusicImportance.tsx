@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import spotifyPlaylistImage from '../assets/media__1779732648474.png';
+import spotifyPlaylistImage from '../assets/spotify-playlist.png';
 import './ContentPages.css';
 
 const SpotifyIcon = ({ size = 20 }: { size?: number }) => (
@@ -74,7 +74,7 @@ const MusicImportance = () => {
                 No es solo música de fondo; es el primer paso para liberar tu mente y recuperar tu energía.
               </p>
               <a 
-                href="https://open.spotify.com" 
+                href="https://open.spotify.com/playlist/4xNeRqOgePCLDSX8KG8ZEu?si=fjs7OCxXTGCPzlppPtT8ww&pi=7GALEM4yTLyRl&nd=1&dlsi=20d39cfcaf3a495d" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="spotify-btn-link"
